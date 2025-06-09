@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Curry 소개</title>
+    <style>
+        :root {
+            --warriors-blue: #1D428A;
+            --golden-yellow: #FFC72C;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: var(--warriors-blue);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: var(--warriors-blue);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: var(--golden-yellow);
+            color: var(--warriors-blue);
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-img, .gallery img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: var(--warriors-blue);
+            border-bottom: 2px solid var(--warriors-blue);
+            padding-bottom: 5px;
+        }
+        ul {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid var(--warriors-blue);
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 30%;
+            min-width: 150px;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .section-title {
+                font-size: 1.2em;
+            }
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stephen Curry 소개</h1>
+</header>
+
+<nav>
+    <a href="#basic-info">기본 정보</a>
+    <a href="#career-detail">커리어 상세</a>
+    <a href="#gallery">사진 갤러리</a>
+    <a href="#charity">사회공헌 활동</a>
+    <a href="#legend-moments">레전드 장면</a>
+</nav>
+
+<div class="container" id="basic-info">
+    <img src="KakaoTalk_20250609_130706332.jpg" alt="Stephen Curry" class="profile-img">
+
+    <h2 class="section-title">기본 정보</h2>
+    <ul>
+        <li>이름: Wardell Stephen Curry II</li>
+        <li>생년월일: 1988년 3월 14일</li>
+        <li>출생지: 미국 오하이오주 애크런</li>
+        <li>키: 188cm</li>
+        <li>포지션: 포인트 가드 (PG)</li>
+        <li>소속팀: 골든스테이트 워리어스 (Golden State Warriors)</li>
+        <li>등번호: 30번</li>
+    </ul>
+
+    <h2 class="section-title">명언</h2>
+    <p class="quote">“Success is not an accident, success is actually a choice.”<br>(성공은 우연이 아니라 선택이다.)</p>
+</div>
+
+<div class="container" id="career-detail">
+    <h2 class="section-title">커리어 상세</h2>
+    <ul>
+        <li>NBA 챔피언 4회 (2015, 2017, 2018, 2022) - 파이널 평균 득점: 30+ PPG</li>
+        <li>NBA 정규 시즌 MVP 2회 (2015, 2016) - 2016 시즌 최초 만장일치 MVP</li>
+        <li>NBA All-Star 선정 10회 이상 - All-Star 3점슛 컨테스트 우승 2회</li>
+        <li>NBA 역사상 최고의 3점 슈터 - 통산 3점슛 최다 기록 보유 (현재 진행형)</li>
+        <li>대표 명장면: 2022 파이널 6차전 승리 후 눈물의 세리머니</li>
+        <li>NBA 75주년 기념 팀 선정</li>
+    </ul>
+</div>
+
+<div class="container" id="gallery">
+    <h2 class="section-title">사진 갤러리</h2>
+    <div class="gallery">
+        <img src="KakaoTalk_20250609_130706332.jpg" alt="Stephen Curry 1">
+        <img src="KakaoTalk_20250609_130706332_01.jpg" alt="Stephen Curry 2">
+        <img src="KakaoTalk_20250609_130706332_02.jpg" alt="Stephen Curry 3">
+        <img src="KakaoTalk_20250609_130706332_03.jpg" alt="Stephen Curry 4">
+    </div>
+</div>
+
+<div class="container" id="charity">
+    <h2 class="section-title">사회공헌 활동</h2>
+    <ul>
+        <li>Eat. Learn. Play. Foundation 설립 (아내 Ayesha와 함께)</li>
+        <li>아동 교육, 영양 지원, 스포츠 활동 지원 프로그램 운영</li>
+        <li>코로나19 기간 중 오클랜드 지역 무료 급식 지원</li>
+        <li>골든스테이트 지역 사회 기부 및 이벤트 참여</li>
+    </ul>
+</div>
+
+<div class="container" id="legend-moments">
+    <h2 class="section-title">레전드 장면</h2>
+    <ul>
+        <li>2016 시즌 한 경기 13개 3점슛 신기록</li>
+        <li>2022 파이널 Game 4, 43득점 폭발</li>
+        <li>경기 종료 직전 하프라인 3점슛 성공</li>
+        <li>NBA 통산 3점슛 최다 기록 갱신 (Ray Allen 기록 돌파)</li>
+    </ul>
+</div>
+
+</body>
+</html>
